@@ -1,0 +1,135 @@
+:root {
+    --salvia: #D9EDBF;
+    --verde: #5AA469;
+    --amarelo: #FCDC2A;
+    --areia: #F7F6BB;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--areia);
+    padding: 0px;
+    margin: 0px;
+    color: var(--verde);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+strong {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 35%;
+    background-color: var(--amarelo);
+    padding: 20px;
+}
+
+.navegador {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navegador__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--amarelo);
+    background-color: var(--areia);
+    padding: 9px;
+    border-radius: 10px;
+}
+
+.navegador__link:hover {
+    background-color: aliceblue;
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.principal__titulo {
+    margin: 50px 0px 50px 0px;
+}
+
+.principal__subtitulo {
+    margin: 50px 0px 50px 0px;
+}
+
+.principal__container {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: var(--salvia);
+    border-radius: 20px;
+    text-align: center;
+    margin: 0 20%;
+    padding: 2%;
+}
+
+.principal__container-video {
+    box-shadow: 6px 6px 7px 2px var(--amarelo);
+    border-radius: 20px;
+    text-align: center;
+    margin: 0 20%;
+    
+}
+
+.principal__lista {
+    padding: 2% 20%;
+}
+
+.principal__item {
+    text-align: left;
+    list-style-type: none;
+    padding: 2% 2%;
+    background-color: var(--salvia);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 2%;
+    width: 30%;
+}
+
+.principal__item-link {
+    color: var(--verde);
+    text-decoration: none;
+}
+
+.principal__item-link::before {
+    content: " - ";
+}
+
+.principal__link {
+
+    color: rgb(10, 95, 10);
+    text-transform: uppercase;
+}
+
+.principal__secundaria {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: var(--salvia);
+    border-radius: 20px;
+    text-align: center;
+    margin: 0 20%;
+    padding: 2%;
+    text-align: center;
+    margin: 5%;
+}
+
+.secundaria__lista {
+    list-style-type: none;
+    text-align: left;
+    margin: 5%;
+}
+
+.rodape {
+    text-align: center;
+    padding: 2%;
+    background-color: var(--verde);
+    color: var(--salvia);
+    text-transform: uppercase;
+}
