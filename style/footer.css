@@ -1,0 +1,7 @@
+.rodape {
+    text-align: center;
+    padding: 2%;
+    background-color: var(--verde);
+    color: var(--salvia);
+    text-transform: uppercase;
+}

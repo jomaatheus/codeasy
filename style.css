@@ -1,3 +1,6 @@
+@import url(/style/header.css);
+@import url(/style/footer.css);
+
 :root {
     --salvia: #D9EDBF;
     --verde: #5AA469;
@@ -20,32 +23,6 @@ strong {
     font-weight: 900;
 }
 
-.cabecalho {
-    display: flex;
-    align-items: center;
-    gap: 35%;
-    background-color: var(--amarelo);
-    padding: 20px;
-}
-
-.navegador {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.navegador__link {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: var(--amarelo);
-    background-color: var(--areia);
-    padding: 9px;
-    border-radius: 10px;
-}
-
-.navegador__link:hover {
-    background-color: aliceblue;
-}
 
 .principal {
     display: flex;
@@ -126,10 +103,3 @@ strong {
     margin: 5%;
 }
 
-.rodape {
-    text-align: center;
-    padding: 2%;
-    background-color: var(--verde);
-    color: var(--salvia);
-    text-transform: uppercase;
-}
