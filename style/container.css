@@ -78,7 +78,7 @@
 }
 
 
-.placeholder, .placeholder__2 {
+.placeholder, .placeholder__2 , .placeholder__3{
     padding: 0.5em;
     border: 1px solid var(--verde);
     border-radius: 10px;
@@ -95,6 +95,13 @@
     background-size: contain;
     padding-left: 2em;
 }
+
+.placeholder__3::placeholder {
+    background: url("/img/pessoa.png") 0.5em no-repeat;
+    background-size: contain;
+    padding-left: 2em;
+}
+
 
 .placeholder__button{
     background-color: var(--amarelo);

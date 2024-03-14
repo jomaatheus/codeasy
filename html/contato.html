@@ -20,10 +20,11 @@
         </nav>
     </header>
     <section class="principal__terciaria">
-        <form action="/cadastro.php" method="post">
-        <p>E-mail: <input class="placeholder" type="email" placeholder="E-mail"></p>
-        <p>Telefone: <input class="placeholder__2" type="tel" placeholder="Telefone"> </p>
-        <p><textarea name="descricao" placeholder="Digite Aqui..." cols="50" rows="10"></textarea></p>
+        <form action="/php/cadastro.php" method="post">
+            <p>Nome: <input name="nome" class="placeholder__3" type="text" placeholder="Nome"></p>
+        <p>E-mail: <input name="email" class="placeholder" type="email" placeholder="E-mail"></p>
+        <p>Telefone: <input name="telefone" class="placeholder__2" type="tel" placeholder="Telefone"> </p>
+        <p><textarea name="mensagem" placeholder="Digite Aqui..." cols="50" rows="10"></textarea></p>
         <input class="placeholder__button" type="submit" value="enviar">
         <input class="placeholder__button" type="reset" value="reset">
     </form>
