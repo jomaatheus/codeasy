@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saber Mais</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/img/email.png">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="/img/R.gif" alt="gif" width="5%" class="cabecalho__imagem">
+        <nav class="navegador">
+            <a href="/index.html" class="navegador__link">home</a>
+            <a href="/html/sobre.html" class="navegador__link">Sobre</a>
+            <a href="/html/contato.html" class="navegador__link">Contato</a>
+            <a href="/html/eventos.html" class="navegador__link">Eventos</a>
+        </nav>
+    </header>
+    <section class="principal__terciaria">
+
+
+        <p><strong> Estrutura de repetição em C/C++</strong></p>
+
+        <p>Estrutura de repetição nada mais é que laços de repetições. <strong>Laços de repetições</strong> permitem
+            que um conjunto de instruções seja repetido até que se faça a condição desejada.</p>
+        <p>A linguagem C </a><a>suporta aos mesmos tipos de laços que as linguagens de programações modernas, esses
+                laços são For, While, Do While.</p>
+
+        <h3>Laço FOR</h3>
+        <p>Laço utilizado geralmente quando existe um termino definido, sempre vai tem um fim definido para esse
+            laço implementado no inicio.</p>
+
+        <strong>Sintaxe</strong>
+        <div>
+            <pre style="white-space:pre;" class="line-numbers"><code class="pre_js">
+For (variável de inicialização; condição; incremento)
+</code></pre>
+        </div>
+
+        <p><strong>Variável de inicialização</strong>: comando de atribuição que inicia uma variável que faz o
+            controle do laço.</p>
+        <p><strong>Condição</strong>: expressão usada que determinará o final do laço.</p>
+        <p><strong>Incremento</strong>: define a variável de controle e muda a cada passada no laço.</p>
+
+        <strong>Exemplo</strong>
+        <div>
+            <pre style="white-space:pre;" class="line-numbers"><code class="pre_js">
+#include&lt;conio.h&gt;
+#include&lt;stdio.h&gt;
+
+int main()
+{
+int i;
+for (i=0; i&lt;10; i++)
+{
+   printf("%d\n", i);
+}    
+getch();
+}</code></pre>
+        </div>
+
+        <h3>Laço WHILE</h3>
+        <p>Laço que pode ter uma condição de termino definida já no inicio ou não.</p>
+        <p>Necessariamente ele testa a condição e se caso for verdadeiro executa o bloco abaixo, caso seja falso ele
+            vai para a próxima instrução fora do laço.</p>
+
+        <strong>Sintaxe</strong>
+        <div>
+            <pre style="white-space:pre;" class="line-numbers"><code class="pre_js">
+While (Condição)
+{
+Comandos;
+}
+</code></pre>
+        </div>
+
+        <p><strong>Condição</strong>: Pode ser qualquer expressão valida ou até quando a verdadeira.</p>
+        <p><strong>Comando</strong>: pode ser um bloco de comando vazio ou de repetição definido por um termino.</p>
+
+        Exemplo
+
+        <h3>Definindo o término</h3>
+        <div>
+            <pre style="white-space:pre;" class="line-numbers"><code class="pre_js">
+#include&lt;conio.h&gt;
+#include&lt;stdio.h&gt;
+
+int main()
+{
+int i=0;
+while(i &lt; 10)
+{
+   i = i+1;
+   printf ("%d\n", i);
+}    
+getch ();
+}
+</code></pre>
+        </div>
+
+        <h3>Termino definido pelo usuário</h3>
+        <div>
+            <pre style="white-space:pre;" class="line-numbers"><code class="pre_js">
+#include&lt;conio.h&gt;
+#include&lt;stdio.h&gt;
+
+int main()
+{
+char ch;
+ch = 0;
+
+while (ch !='A')
+{
+   ch = getche();
+}
+getch();
+}
+</code></pre>
+        </div>
+
+        <h3>Laço DO WHILE</h3>
+
+        <p>Laço quase igual ao While, a diferença é que primeiro ele executa um bloco e testa a condição, caso seja
+            falsa vai para o próxima instrução.</p>
+
+        <strong>Sintaxe</strong>
+
+        Do
+        {
+        Comandos;
+        } while(condição);
+        </code></pre>
+        </div>
+
+        <strong>Exemplo</strong>
+
+        int main()
+        {
+        int i=0;
+
+        do
+        {
+        i++;
+        printf("%d\n", i);
+        } while(i &lt;= 10);
+
+        getch();
+        }
+        </code></pre>
+        </div>
+
+        <p>Se notarem no comando while ele preenche até o numero 10 pois ele testa a condição primeiro e no do while
+            podem notar que ele imprime 11 devido ele entrar novamente dentro do laço e depois testar a
+            condição.</p>
+
+        <p>Com isso mostro que não tem dificuldades em utilizar essa linguagem de programação, pois os conceitos são
+            os mesmos das outras linguagens, lembrando que estou mostrando a parte básica ainda da
+            utilização de Estrutura de repetição.</p>
+
+        <p><iframe class="principal__container-video"  width="560" height="315" src="https://www.youtube-nocookie.com/embed/9o-r9uxw7LY?si=OSCxrcnai50hNGXW"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></p>
+    </section>
+    </section>
+    <footer class="rodape">
+        developed by codeasy company.
+    </footer>
+
+</body>
+
+</html>

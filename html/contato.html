@@ -16,13 +16,17 @@
             <a href="/index.html" class="navegador__link">home</a>
             <a href="/html/sobre.html" class="navegador__link">Sobre</a>
             <a href="#" class="navegador__link">Contato</a>
+            <a href="/html/eventos.html" class="navegador__link">Eventos</a>
         </nav>
     </header>
     <section class="principal__terciaria">
-        <p>E-mail: <input class="placeholder" type="email" placeholder="E-mail"> <button
-                class="placeholder__button" onclick="">Enviar</button></p>
-        <p>Telefone: (83) 9XXXX-XXXX</p>
-        <p>Qualquer informação adicional nos contatar no seguinte numero: XXXX-XXXX</p>
+        <form action="cadastro.php">
+        <p>E-mail: <input class="placeholder" type="email" placeholder="E-mail"></p>
+        <p>Telefone: <input class="placeholder__2" type="tel" placeholder="Telefone"> </p>
+        <p><textarea name="descricao" placeholder="Digite Aqui..." cols="50" rows="10"></textarea></p>
+        <input class="placeholder__button" type="submit" value="enviar">
+        <input class="placeholder__button" type="reset" value="reset">
+    </form>
         <p>ENDEREÇO </p>
         <p> Unifacisa - Campus Itararé
             Av. Sen. Argemiro de Figueiredo, 1901 Itararé, Campina Grande - PB 58411-020
