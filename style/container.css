@@ -142,16 +142,18 @@
 }
 .principal__quartiaria {
     display: flex;
+    text-align: center;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     background-color: var(--salvia);
     border-radius: 20px;
-    text-align: center;
-    margin: 15% 5% 15% 40%;
-    padding: 2%;
-    gap: 2em;
-    justify-content: center;
+    width: 50%;
+}
+
+.principal__2 {
+    display: flex;
     align-items: center;
-    width: 20%;
+    justify-content: center;
+    margin-top: 10em;
 }
 
 .lista {
