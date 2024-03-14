@@ -20,22 +20,35 @@
         </nav>
     </header>
     <section class="principal__terciaria">
-        <form action="">
-            <p>Nome: <input class="placeholder__3" type="text" placeholder="Nome"></p>
-            <p>E-mail: <input class="placeholder" type="email" placeholder="E-mail"></p>
-            <p>Telefone: <input class="placeholder__2" type="tel" placeholder="Telefone"> </p>
-            <p><textarea name="descricao" placeholder="Digite Aqui..." cols="50" rows="10"></textarea></p>
+        <form class="form" action="https://formsubmit.co/jomaatheus@gmail.com" method="POST">
+            <label for="nome">Nome:</label>
+            <input class="placeholder__3" type="text" name="Nome" id="nome" placeholder="Nome">
+
+            <label for="email">E-mail:</label>
+            <input class="placeholder" type="email" name="E-mail" id="email" placeholder="E-mail" required>
+
+            <label for="telephone">Telefone:</label>
+            <input class="placeholder__2" type="tel" name="Telefone" id="telephone" placeholder="Telefone" required>
+
+            <label for="message"></label>
+            <textarea class="placeholder__4" name="Mensagem" id="message" placeholder="Digite Aqui..." cols="50"
+                rows="10"></textarea>
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/html/thanks.html">
+
             <input class="placeholder__button" type="submit" value="enviar">
             <input class="placeholder__button" type="reset" value="reset">
         </form>
-        <p>ENDEREÇO </p>
-        <p> Unifacisa - Campus Itararé
-            Av. Sen. Argemiro de Figueiredo, 1901 Itararé, Campina Grande - PB 58411-020
-        </p>
-        <p>
-            Unifacisa/Esac - Campus Catolé
-            R. Luíza Bezerra Mota, 200 Catolé, Campina Grande - PB 58410-340
-        </p>
+        <div class="principal__terciaria-alinhar">
+            <p>ENDEREÇO </p>
+            <p> Unifacisa - Campus Itararé
+                Av. Sen. Argemiro de Figueiredo, 1901 Itararé, Campina Grande - PB 58411-020
+            </p>
+            <p>
+                Unifacisa/Esac - Campus Catolé
+                R. Luíza Bezerra Mota, 200 Catolé, Campina Grande - PB 58410-340
+            </p>
+        </div>
 
     </section>
     <footer class="rodape">
