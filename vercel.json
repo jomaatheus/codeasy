@@ -1,0 +1,6 @@
+{
+    "rewrites": [
+      { "source": "/cadastro.php", "destination": "/cadastro.php" }
+    ]
+  }
+  
