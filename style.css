@@ -3,6 +3,7 @@
 @import url(/style/container.css);
 @import url(/style/sabermais.css);
 @import url(/style/main.css);
+@import url(/style/form.css);
 
 :root {
     --azul: #76ABAE;
@@ -16,4 +17,8 @@ body {
     background-color: var(--branco);
     color: var(--cinza);
     font-size: 14px;
+}
+
+.margin {
+    margin-bottom: 25em;
 }

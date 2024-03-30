@@ -1,0 +1,57 @@
+.principal__form {
+    text-align: center;
+    padding: 5%;
+    text-transform: uppercase;
+}
+
+.principal__form-1,
+.principal__form-2,
+.principal__form-3,
+.principal__form-4 {
+    margin: 2%;
+    width: 50%;
+    border: 1px solid var(--azul);
+    border-radius: 10px;
+    background-color: var(--branco);
+    padding: 2%;
+}
+
+.principal__form-1::placeholder {
+    background: url(/img/pessoa.png) no-repeat;
+    background-size: contain;
+    background-position: 1em;
+    padding-left: 3em;
+}
+
+.principal__form-2::placeholder {
+    background: url(/img/email.png) no-repeat;
+    background-size: contain;
+    background-position: 1em;
+    padding-left: 3em;
+}
+
+.principal__form-3::placeholder {
+    background: url(/img/telefone.png) no-repeat;
+    background-size: contain;
+    background-position: 1em;
+    padding-left: 3em;
+}
+
+.principal__form-4 {
+    margin: 2%;
+    width: 100%;
+}
+.placeholder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.placeholder__button {
+    background-color: var(--azul);
+    border: 1px solid transparent;
+    padding: 0.5em 2em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    margin-top: 1em;
+}

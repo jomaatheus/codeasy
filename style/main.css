@@ -3,11 +3,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5%;
+    padding: 15% 10%;
 }
 
 .principal__titulo {
-    padding:10% 0 5% 0;
+    padding:5% 0 5% 0;
     font-size: 1.2em;
     font-weight: bold;
 }
@@ -27,4 +27,24 @@
 
 .principal__item {
     padding: 1%;
+    color: var(--azul);
+}
+
+.principal__item-link {
+    color: var(--azul);
+}
+
+.principal__texto-titulo {
+    padding: 15% 0 5% 0;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.principal__texto {
+    text-align: center;
+}
+
+.principal__imagem {
+    width: 40%;
 }
