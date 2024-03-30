@@ -1,26 +1,32 @@
 .cabecalho {
     display: flex;
     align-items: center;
-    gap: 35%;
-    background-color: var(--amarelo);
-    padding: 20px;
+    padding: 2%;
+    background-color: var(--preto);
 }
 
-.navegador {
+.navegador{
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    padding-right: 40%;
+    gap: 10%;
 }
 
 .navegador__link {
     text-decoration: none;
     text-transform: uppercase;
-    color: var(--amarelo);
-    background-color: var(--areia);
-    padding: 9px;
-    border-radius: 10px;
+    font-size: 50%;
+    color: var(--cinza);
+    background-color: var(--branco);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 5%;
+    text-align: center;
 }
 
 .navegador__link:hover {
     background-color: aliceblue;
+}
+.cabecalho__imagem {
+    width: 30%;
+
 }

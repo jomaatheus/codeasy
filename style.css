@@ -2,27 +2,18 @@
 @import url(/style/footer.css);
 @import url(/style/container.css);
 @import url(/style/sabermais.css);
+@import url(/style/main.css);
 
 :root {
-    --salvia: #76ABAE;
-    --verde: #31363F;
-    --amarelo: #222831;
-    --areia: #EEEEEE;
+    --azul: #76ABAE;
+    --cinza: #31363F;
+    --preto: #222831;
+    --branco: #EEEEEE;
 }
 
 body {
     box-sizing: border-box;
-    background-color: var(--areia);
-    padding: 0px;
-    margin: 0px;
-    color: var(--verde);
-    font-size: 15px;
-    font-weight: bold;
+    background-color: var(--branco);
+    color: var(--cinza);
+    font-size: 14px;
 }
-
-strong {
-    font-size: 25px;
-    font-weight: 900;
-}
-
-
