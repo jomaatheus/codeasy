@@ -1,6 +1,30 @@
 .principal {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 5%;
+}
+
+.principal__titulo {
+    padding:10% 0 5% 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.principal__subtitulo {
+    padding: 5%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.principal__lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 7%;
+}
+
+.principal__item {
+    padding: 1%;
 }

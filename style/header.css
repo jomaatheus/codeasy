@@ -3,6 +3,7 @@
     align-items: center;
     padding: 2%;
     background-color: var(--preto);
+    position: fixed;
 }
 
 .navegador{

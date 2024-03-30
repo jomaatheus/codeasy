@@ -1,0 +1,29 @@
+.container__video {
+    width: 80%;
+    height: 80%;
+    box-shadow: 0px 4px 4px 0px var(--preto);
+    border-radius: 10px;
+}
+
+.container {
+    text-align: center;
+    box-shadow: 0px 4px 4px 0px var(--preto);
+    padding: 5%;
+    border-radius: 10px;
+}
+
+.container__texto{
+    padding: 5%;
+}
+
+.container__texto-paragrafo {
+    font-weight: bold;
+}
+
+#btnLeiaMais {
+  text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: bold;
+    color: var(--preto);
+    font-size: 90%;
+}

@@ -22,14 +22,14 @@
     </header>
     <section class="principal">
         <h1 class="principal__titulo">Como tudo começou...</h1>
-        <!--<iframe class="principal__container-video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/sTX0UEplF54?si=jdnk90d9iUw-u4uY"
+        <iframe class="container__video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/sTX0UEplF54?si=jdnk90d9iUw-u4uY"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
             <h2 class="principal__subtitulo">Por onde começar?</h2>
-            <div class="principal__container">
-                <p><strong>O que é programação básica?</strong></p>
-                <p>Para que os computadores, os celulares, entre outros dispositivos e ferramentas, entendam o que
+            <div class="container">
+                <p class="container__texto"><strong class="container__texto-paragrafo">O que é programação básica?</strong></p>
+                <p class="container__texto">Para que os computadores, os celulares, entre outros dispositivos e ferramentas, entendam o que
                     queremos
                     e realizem os comandos, é necessário todo um procedimento prévio. Primeiramente, programar é
                     elaborar e
@@ -55,7 +55,7 @@
                 <p>Conceitos usados no aprendizado de programação
                     Ao iniciarmos os estudos em programação
         
-                    <span id="pontos">...</span></p> -->
+                    <span id="pontos">...</span></p>
 
                     <span id="mais">
                         <article class="post">
@@ -433,8 +433,8 @@
                         </article>
                     
                     </span>
-
-                    <a class="principal__link" onclick="leiaMais()" id="btnLeiaMais">Leia Mais</a>
+                    <br>
+                    <a onclick="leiaMais()" id="btnLeiaMais">Leia Mais</a> 
 
                     <script type="text/javascript" src="script.js"></script>
             </div>
@@ -450,6 +450,7 @@
             <li class="principal__item"><a href="/html/javascript.html" class="principal__item-link" target="_blank">Artigo JavaScript</a></li>
         </ul>
     </div>
+    
     <footer class="rodape">
         developed by codeasy company.
     </footer>
