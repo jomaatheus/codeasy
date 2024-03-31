@@ -27,3 +27,16 @@
     color: var(--preto);
     font-size: 90%;
 }
+
+.container__margin {
+    margin-top: 5em;
+    margin-bottom: 15em;
+}
+
+.container__lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}

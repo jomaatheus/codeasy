@@ -6,6 +6,7 @@
     padding: 15% 10%;
 }
 
+
 .principal__titulo {
     padding:5% 0 5% 0;
     font-size: 1.2em;
@@ -22,7 +23,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 7%;
+    padding: 0 3em 2em 3em;
+    list-style-type: none ;
 }
 
 .principal__item {
@@ -47,4 +49,28 @@
 
 .principal__imagem {
     width: 40%;
+}
+
+.principal__link {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    padding-top: 35em;
+}
+
+.principal__link-ancora{
+    background-color: var(--preto);
+    color: var(--branco);
+    padding:1em;
+    border: 1px solid transparent;
+    border-radius: 1em;
+    text-decoration: none;
+}
+.principal__link-ancora:hover {
+    background-color: var(--cinza);
+}
+
+.principal__imagem:hover {
+    width: 27.9em;
+    transition-duration: 450ms;
 }

@@ -4,6 +4,7 @@
     padding: 2%;
     background-color: var(--preto);
     position: fixed;
+    z-index: 1;
 }
 
 .navegador{

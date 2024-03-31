@@ -4,6 +4,8 @@
 @import url(/style/sabermais.css);
 @import url(/style/main.css);
 @import url(/style/form.css);
+@import url(/style/control.css);
+@import url(/style/artigos.css);
 
 :root {
     --azul: #76ABAE;
@@ -21,4 +23,8 @@ body {
 
 .margin {
     margin-bottom: 25em;
+}
+
+.margin__imagem {
+    margin: 1em;
 }
