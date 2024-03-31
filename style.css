@@ -25,12 +25,16 @@ body {
     margin-bottom: 25em;
 }
 
+.margin-top {
+    margin-top: 50em;
+}
+
 .margin__imagem {
     margin: 1em;
 }
 
 @media screen and (min-width:820px){
     .margin{
-margin-bottom: 40em;
+     margin-bottom: 40em;
     }
 }

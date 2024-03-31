@@ -8,6 +8,13 @@
     text-transform: uppercase;
 }
 
+@media screen and (min-width: 820px) {
+    .rodape {
+        padding: 2%;
+        margin-top: 20em;
+    }
+ }
+
 @media screen and (min-width: 1366px) {
     .rodape {
         padding: 2%;
