@@ -3,3 +3,9 @@
     padding: 5em 3em 5em 3em;
 
 }
+
+@media screen and (min-width:820px){
+    .artigo-texto {
+        padding: 10em 6em 10em 6em;
+    }
+}

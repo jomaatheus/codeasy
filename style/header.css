@@ -7,7 +7,7 @@
     z-index: 1;
 }
 
-.navegador{
+.navegador {
     display: flex;
     padding-right: 40%;
     gap: 10%;
@@ -16,7 +16,7 @@
 .navegador__link {
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 50%;
+    font-size: 0.6em;
     color: var(--cinza);
     background-color: var(--branco);
     border: 1px solid transparent;
@@ -28,7 +28,27 @@
 .navegador__link:hover {
     background-color: aliceblue;
 }
+
 .cabecalho__imagem {
     width: 30%;
 
+}
+
+@media screen and (min-width:820px) {
+    .navegador__link {
+        font-size: 1em;
+    }
+    .cabecalho__imagem {
+        width: 20%;
+    
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .navegador__link {
+        font-size: 1em;
+    }
+    .cabecalho__imagem {
+        width: 15%;
+    }
 }

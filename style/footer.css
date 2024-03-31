@@ -7,3 +7,9 @@
     color: var(--azul);
     text-transform: uppercase;
 }
+
+@media screen and (min-width: 1366px) {
+    .rodape {
+        padding: 2%;
+    }
+ }
