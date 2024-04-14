@@ -5,451 +5,551 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codeasy</title>
-    <link rel="stylesheet" href="/style/reset.css">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
     <link rel="icon" href="/img/casa.png">
 </head>
 
 <body>
     <header class="cabecalho">
-        <a href="/index.html"><img src="/img/R.gif" alt="gif" class="cabecalho__imagem"></a>
-        <nav class="navegador">
-            <a href="#" class="navegador__link">home</a>
-            <a href="/html/sobre.html" class="navegador__link">Sobre</a>
-            <a href="/html/contato.html" class="navegador__link">Contato</a>
-            <a href="/html/eventos.html" class="navegador__link">Eventos</a>
-        </nav>
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo ">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">HOME</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="/html/sobre.html" class="lista-menu__link">SOBRE</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">CONTATO</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">EVENTOS</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="/html/podcast.html" class="lista-menu__link">PODCAST</a>
+                </li>
+            </ul>
+            <a href="/index.html"><img src="/img/logo.png" alt="Logo da AluraBooks" class="container__imagem"></a>
+            <h1 class="container__titulo"><b class="container__titulo--negrito">CodE</b>asy</h1>
+        </div>
+
+        <ul class="opcoes">
+            <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+            <label for="opcoes-menu" class="opcoes__rotulo">
+                <li class="opcoes__item">Categorias</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">HOME</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="/html/sobre.html" class="lista-menu__link">SOBRE</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">CONTATO</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">EVENTOS</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="/html/podcast.html" class="lista-menu__link">PODCAST</a>
+                </li>
+            </ul>
+
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Favoritos</a></li>
+        </ul>
+
+        <div class="container">
+
+            <a href="#">
+                <img src="/img/Favoritos.svg" alt="Meus Favoritos"
+                    class="container__imagem container__imagem-transparente">
+
+            </a>
+
+            <a href="#" class="container__link">
+                <img src="/img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+                <p class="container__texto">Meu perfil</p>
+            </a>
+
+        </div>
+
     </header>
-    <section class="principal">
-        <h1 class="principal__titulo">Como tudo começou...</h1>
-        <iframe class="container__video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/sTX0UEplF54?si=jdnk90d9iUw-u4uY"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-            <h2 class="principal__subtitulo">Por onde começar?</h2>
-            <div class="container">
-                <p class="container__texto"><strong class="container__texto-paragrafo">O que é programação básica?</strong></p>
-                <p class="container__texto">Para que os computadores, os celulares, entre outros dispositivos e ferramentas, entendam o que
-                    queremos
-                    e realizem os comandos, é necessário todo um procedimento prévio. Primeiramente, programar é
-                    elaborar e
-                    planejar algo a ser criado. Feito isso, é preciso se comunicar de alguma forma com as máquinas,
-                    definindo como elas irão se comportar e responder às necessidades humanas. Isso ocorre através das
-                    linguagens de programação.</p>
 
-                <p>Basicamente, programar é planejar, elaborar e criar programas/aplicativos ou eletrônicos, visando
-                    atender
-                    as necessidades da sociedade.</p>
-
-                <p> O que é lógica de programação?
-                    Em nossa rotina diária, ao realizarmos alguma ação, muitas vezes precisamos seguir um passo a passo.
-                    Por
-                    exemplo, ao acordar, arrumamos a cama, nos deslocamos até a cozinha, fazemos o café, mexemos um ovo,
-                    sentamos na cadeira, tomamos o café da manhã e, por fim, lavamos a louça. Essa sequência de ações
-                    ainda
-                    pode ser quebrada em pedaços ainda menores, criando mais etapas que precisarão ser cumpridas. </p>
-
-                <p>Na programação funciona da mesma forma. Através do raciocínio lógico, desenvolvemos uma sequência de
-                    ações que devem ser realizadas para que nossa aplicação funcione de maneira correta.</p>
-
-                <p>Conceitos usados no aprendizado de programação
-                    Ao iniciarmos os estudos em programação
-        
-                    <span id="pontos">...</span></p>
-
-                    <span id="mais">
-                        <article class="post">
-                            <div>
-                
-                            </div>
-                            <h1 class="title title--small-size title--margin">
-                                Introdução à Programação: quais são os conceitos fundamentais? </h1>
-                            <p>Já parou para pensar que tudo à sua volta foi programado por alguém? O computador que você usa, o seu
-                                celular, o aplicativo de mensagens e, até mesmo, os comandos do seu carro. Vivemos em uma era de
-                                evolução acelerada da tecnologia, se fazendo, cada vez mais, necessário o uso das linguagens de
-                                programação em diferentes contextos.</p>
-                            <!-- /wp:paragraph -->
-                
-                            <!-- wp:paragraph -->
-                            <p>Mas, afinal, o que é a programação? Como uma máquina é capaz de entender um comando criado por um humano?
-                                Essas e outras perguntas nós responderemos a seguir nesse artigo.</p>
-                            <!-- /wp:paragraph -->
-                
-                            <!-- wp:heading -->
-                            <h2 class="wp-block-heading">O que é programação básica?</h2>
-                            <!-- /wp:heading -->
-                
-                            <!-- wp:paragraph -->
-                            <p>Para que os computadores, os celulares, entre outros dispositivos e ferramentas, entendam o que queremos
-                                e realizem os comandos, é necessário todo um procedimento prévio. Primeiramente, programar é elaborar e
-                                planejar algo a ser criado. Feito isso, é preciso se comunicar de alguma forma com as máquinas,
-                                definindo como elas irão se comportar e responder às necessidades humanas. Isso ocorre através das
-                                linguagens de programação.</p>
-                            <!-- /wp:paragraph -->
-                
-                            <!-- wp:paragraph -->
-                            <p>Basicamente, programar é planejar, elaborar e criar programas/aplicativos ou eletrônicos, visando atender
-                                as necessidades da sociedade.</p>
-                            <!-- /wp:paragraph -->
-                
-                            <!-- wp:heading -->
-                            <h2 class="wp-block-heading">O que é lógica de programação?</h2>
-                            <!-- /wp:heading -->
-                
-                            <!-- wp:paragraph -->
-                            <p>Em nossa rotina diária, ao realizarmos alguma ação, muitas vezes precisamos seguir um passo a passo. Por
-                                exemplo, ao acordar, arrumamos a cama, nos deslocamos até a cozinha, fazemos o café, mexemos um ovo,
-                                sentamos na cadeira, tomamos o café da manhã e, por fim, lavamos a louça. Essa sequência de ações ainda
-                                pode ser quebrada em pedaços ainda menores, criando mais etapas que precisarão ser cumpridas.&nbsp;</p>
-                            <!-- /wp:paragraph -->
-                
-                            <!-- wp:paragraph -->
-                            <p>Na programação funciona da mesma forma. Através do raciocínio lógico, desenvolvemos uma sequência de
-                                ações que devem ser realizadas para que nossa aplicação funcione de maneira correta.</p>
-                            <!-- /wp:paragraph -->
-                
-                            <!-- wp:heading -->
-                            <h2 class="wp-block-heading">Conceitos usados no aprendizado de programação</h2>
-                            <!-- /wp:heading -->
-                
-                            <!-- wp:paragraph -->
-                            <p>Ao iniciarmos os estudos em programação, por mais que existam diferentes linguagens, os conceitos básicos
-                                são os mesmos. É de suma importância entendê-los, visando construir uma base sólida de aprendizado na
-                                área. A seguir, veremos alguns desses principais conceitos utilizados no mundo do desenvolvimento:</p>
-                            <!-- /wp:paragraph -->
-                
-                            <!-- wp:heading {"level":3} -->
-                            <h3 class="wp-block-heading">Algoritmo</h3>
-                            <!-- /wp:heading -->
-                
-                            <!-- wp:paragraph -->
-                            <p>Vimos anteriormente que é necessário seguirmos uma sequência de passos ao desenvolver um programa. Essa
-                                sequência, que possui o objetivo de realizar uma tarefa específica, é o que chamamos de algoritmo.</p>
-                            <!-- /wp:paragraph -->
-                
-                            <!-- wp:heading {"level":3} -->
-                            <h3 class="wp-block-heading">Variáveis e constantes na programação</h3>
-                            <!-- /wp:heading -->
-                
-                            <!-- wp:paragraph -->
-                            <p>Já sabemos que precisamos desenvolver os algoritmos utilizando a lógica de programação. Porém, como
-                                lidamos com os dados e informações da nossa sequência? Para resolver esse problema, existem as variáveis
-                                e constantes. Estas são utilizadas para armazenar os valores referentes a um dado.&nbsp;</p>
-                            <!-- /wp:paragraph -->
-                
-                            <!-- wp:paragraph -->
-                            <p>Além disso, na programação, existem diferentes tipos de dados. São eles:</p>
-                            <!-- /wp:paragraph -->
-                
-                            <!-- wp:list -->
-                            <ul class="secundaria__lista"><!-- wp:list-item -->
-                                <li><strong>int</strong>: Valor numérico do tipo inteiro.</li>
-                                <!-- /wp:list-item -->
-                
-                                <!-- wp:list-item -->
-                                <li><strong>float</strong>: Valor numérico do tipo decimal.</li>
-                                <!-- /wp:list-item -->
-                
-                                <!-- wp:list-item -->
-                                <li><strong>double</strong>: Valor numérico do tipo decimal de precisão dupla.</li>
-                                <!-- /wp:list-item -->
-                
-                                <!-- wp:list-item -->
-                                <li><strong>char</strong>: É um caractere do tipo texto.</li>
-                                <!-- /wp:list-item -->
-                
-                                <!-- wp:list-item -->
-                                <li><strong>string</strong>:<strong> </strong>Conjunto de caracteres do tipo texto.&nbsp;</li>
-                                <!-- /wp:list-item -->
-                
-                                <!-- wp:list-item -->
-                                <li><strong>boolean</strong>: Representa os valores de verdadeiro ou falso.</li>
-                                <!-- /wp:list-item -->
-                            </ul>
-                            <!-- /wp:list -->
-                
-                            <!-- wp:heading {"level":3} -->
-                            <h3 class="wp-block-heading">Operadores matemáticos usados na programação</h3>
-                            <!-- /wp:heading -->
-                
-                            <!-- wp:paragraph -->
-                            <p>Esse conceito é bem básico e se assemelha muito ao que aprendemos na escola. Ao desenvolvermos um
-                                software, utilizamos operadores matemáticos o tempo todo para resolvermos diversas situações. Inclusive,
-                                as operações seguem as mesmas regras das expressões matemáticas, seguindo a lógica dos parênteses,
-                                potencialização, raiz quadrada, entre outros. São eles:&nbsp;</p>
-                            <!-- /wp:paragraph -->
-                
-                            <!-- wp:list -->
-                            <ul class="secundaria__lista"><!-- wp:list-item -->
-                                <li><strong>Adição</strong>: Representado pelo sinal de “+”.</li>
-                                <!-- /wp:list-item -->
-                
-                                <!-- wp:list-item -->
-                                <li><strong>Subtração</strong>: Representado pelo sinal de “-”.</li>
-                                <!-- /wp:list-item -->
-                
-                                <!-- wp:list-item -->
-                                <li><strong>Multiplicação</strong>: Representado pelo sinal de “*”.</li>
-                                <!-- /wp:list-item -->
-                
-                                <!-- wp:list-item -->
-                                <li><strong>Divisão</strong>: Representado pelo sinal de “/”.</li>
-                                <!-- /wp:list-item -->
-                
-                                <!-- wp:list-item -->
-                                <li><strong>Mod</strong>: Representado pelo sinal de “%”. Retorna o resto de uma divisão.</li>
-                                <!-- /wp:list-item -->
-                            </ul>
-                            <!-- /wp:list -->
-                
-                            <!-- wp:heading {"level":3} -->
-                            <h3 class="wp-block-heading">Operadores de comparação na programação</h3>
-                            <!-- /wp:heading -->
-                
-                            <!-- wp:paragraph -->
-                            <p>Utilizamos os operadores de comparação para analisarmos uma condição imposta em nosso código, retornando
-                                sempre verdadeiro ou falso. Seu uso é bem comum, principalmente, para verificar o tipo entre dados ou
-                                números. São eles:&nbsp;</p>
-                            <!-- /wp:paragraph -->
-                
-                            <!-- wp:list -->
-                            <ul class="secundaria__lista"><!-- wp:list-item -->
-                                <li><strong>Maior</strong>: Representado pelo símbolo “&gt;”.</li>
-                                <!-- /wp:list-item -->
-                
-                                <!-- wp:list-item -->
-                                <li><strong>Maior ou igual</strong>: Representado pelo símbolo “&gt;=”.</li>
-                                <!-- /wp:list-item -->
-                
-                                <!-- wp:list-item -->
-                                <li><strong>Menor</strong>: Representado pelo símbolo “&lt;”.</li>
-                                <!-- /wp:list-item -->
-                
-                                <!-- wp:list-item -->
-                                <li><strong>Menor ou igual</strong>: Representado pelo símbolo “&lt;=”.</li>
-                                <!-- /wp:list-item -->
-                
-                                <!-- wp:list-item -->
-                                <li><strong>Igual</strong>: Representado pelo símbolo “==”.&nbsp;</li>
-                                <!-- /wp:list-item -->
-                
-                                <!-- wp:list-item -->
-                                <li><strong>Diferente</strong>: Representado pelo símbolo “!=”.</li>
-                                <!-- /wp:list-item -->
-                            </ul>
-                            <!-- /wp:list -->
-                
-                            <!-- wp:heading {"level":3} -->
-                            <h3 class="wp-block-heading">Operadores lógicos</h3>
-                            <!-- /wp:heading -->
-                
-                            <!-- wp:paragraph -->
-                            <p>Existem situações mais complexas em nossos códigos que serão necessários verificar e analisar os dados,
-                                retornando um verdadeiro ou falso, através da lógica. Para isso, utilizamos os seguintes
-                                operadores:&nbsp;</p>
-                            <!-- /wp:paragraph -->
-                
-                            <!-- wp:list -->
-                            <ul class="secundaria__lista"><!-- wp:list-item -->
-                                <li><strong>&amp;&amp; (E)</strong>: Esse operador retorna verdadeiro apenas quando todas as condições
-                                    são verdadeiras.</li>
-                                <!-- /wp:list-item -->
-                
-                                <!-- wp:list-item -->
-                                <li><strong>|| (OU)</strong>: Diferente do anterior, esse operador retorna verdadeiro quando pelo menos
-                                    umas das condicionais é verdadeira.</li>
-                                <!-- /wp:list-item -->
-                
-                                <!-- wp:list-item -->
-                                <li><strong>! (NEGAÇÃO)</strong>: Esse operador retorna o oposto do valor analisado. Por exemplo, se um
-                                    valor for verdadeiro, utilizando o operador de negação, ele se tornará falso.</li>
-                                <!-- /wp:list-item -->
-                            </ul>
-                            <!-- /wp:list -->
-                
-                            <!-- wp:heading {"level":3} -->
-                            <h3 class="wp-block-heading">Estruturas condicionais e de repetição</h3>
-                            <!-- /wp:heading -->
-                
-                            <!-- wp:paragraph -->
-                            <p>Existem diversos momentos no desenvolvimento das nossas aplicações onde sentimos a necessidade de
-                                executar o mesmo comando diversas vezes ou para diferentes elementos. Para que isso ocorra, é necessário
-                                utilizar uma estrutura de repetição. Essas estruturas funcionam de maneira diferente em cada
-                                linguagem.&nbsp;</p>
-                            <!-- /wp:paragraph -->
-                
-                            <!-- wp:paragraph -->
-                            <p>Já nas estruturas condicionais, por padrão, na maioria das linguagens, utilizamos o<strong> IF
-                                    (SE)</strong> e <strong>ELSE (SENÃO)</strong> para criar as condições de validação e verificação das
-                                informações.</p>
-                            <!-- /wp:paragraph -->
-                
-                            <!-- wp:heading {"level":3} -->
-                            <h3 class="wp-block-heading">Modularização: Funções e Procedimentos</h3>
-                            <!-- /wp:heading -->
-                
-                            <!-- wp:paragraph -->
-                            <p>Quando lidamos com projetos do mercado de trabalho, é preciso definir e modular a estrutura das nossas
-                                aplicações. Dessa forma, dividimos a mesma em blocos menores, partilhando as responsabilidades,
-                                reutilizando código e facilitando a manutenção, quando necessária.&nbsp;</p>
-                            <!-- /wp:paragraph -->
-                
-                            <!-- wp:paragraph -->
-                            <p>Isso só é possível devido às funções e procedimentos. A primeira é um conjunto de comandos, com o
-                                objetivo de realizar uma tarefa determinada. Já os procedimentos são bem semelhantes, porém não possuem
-                                nenhum retorno. Podem ser utilizados para mostrar uma mensagem no console do navegador, por exemplo.</p>
-                            <!-- /wp:paragraph -->
-                
-                            <!-- wp:heading -->
-                            <h2 class="wp-block-heading">Boas práticas de programação</h2>
-                            <!-- /wp:heading -->
-                
-                            <!-- wp:paragraph -->
-                            <p>Na programação existem diversas boas práticas a serem seguidas. Isso ocorre para facilitar o trabalho em
-                                equipe e criar uma padronização nos projetos. Entre essas boas práticas, as principais são:&nbsp;</p>
-                            <!-- /wp:paragraph -->
-                
-                            <!-- wp:list -->
-                            <ul class="secundaria__lista"><!-- wp:list-item -->
-                                <li><strong>Legibilidade</strong>: Os códigos devem ser legíveis para qualquer desenvolvedor entender.
-                                </li>
-                                <!-- /wp:list-item -->
-                
-                                <!-- wp:list-item -->
-                                <li><strong>Código limpo</strong>: Devemos criar códigos objetivos e limpos. Essa prática está
-                                    diretamente ligada com a questão da legibilidade.</li>
-                                <!-- /wp:list-item -->
-                
-                                <!-- wp:list-item -->
-                                <li><strong>Nomes descritivos</strong>: Os nomes das nossas variáveis, constantes e funções devem ser
-                                    claros e descritivos.</li>
-                                <!-- /wp:list-item -->
-                
-                                <!-- wp:list-item -->
-                                <li><strong>Atenção ao criar comentários</strong>: Não crie comentários desnecessários nos códigos. Isso
-                                    pode acabar afetando a legibilidade do mesmo.</li>
-                                <!-- /wp:list-item -->
-                
-                                <!-- wp:list-item -->
-                                <li><strong>Identação</strong>: Nossos códigos devem ser identados. Dessa forma, conseguimos identificar
-                                    os blocos e escopos.</li>
-                                <!-- /wp:list-item -->
-                            </ul>
-                            <!-- /wp:list -->
-                
-                            <!-- wp:heading -->
-                            <h2 class="wp-block-heading">Termos comuns (técnicos ou não)</h2>
-                            <!-- /wp:heading -->
-                
-                            <!-- wp:paragraph -->
-                            <p>Assim como em outras áreas, no meio da programação existem diversos termos que precisamos nos habituar.
-                                Entre os principais, estão:</p>
-                            <!-- /wp:paragraph -->
-                
-                            <!-- wp:heading {"level":3} -->
-                            <h3 class="wp-block-heading">Front-end</h3>
-                            <!-- /wp:heading -->
-                
-                            <!-- wp:paragraph -->
-                            <p>Desenvolvedor que trabalha com a parte visual das aplicações, onde o usuário interage diretamente.</p>
-                            <!-- /wp:paragraph -->
-                
-                            <!-- wp:heading {"level":3} -->
-                            <h3 class="wp-block-heading">Back-end</h3>
-                            <!-- /wp:heading -->
-                
-                            <!-- wp:paragraph -->
-                            <p>Desenvolvedor que trabalha com a parte de armazenamento e segurança dos dados numa aplicação.</p>
-                            <!-- /wp:paragraph -->
-                
-                            <!-- wp:heading {"level":3} -->
-                            <h3 class="wp-block-heading">Full-Stack</h3>
-                            <!-- /wp:heading -->
-                
-                            <!-- wp:paragraph -->
-                            <p>Desenvolvedor que atua tanto na parte do Front-end, quanto no Back-end. Ou seja, lida com a área onde o
-                                usuário interage diretamente, mas também cuida da segurança e do armazenamento dos dados.</p>
-                            <!-- /wp:paragraph -->
-                
-                            <!-- wp:heading {"level":3} -->
-                            <h3 class="wp-block-heading">API</h3>
-                            <!-- /wp:heading -->
-                
-                            <!-- wp:paragraph -->
-                            <p>São serviços desenvolvidos para que os softwares acessem e utilizem as suas funcionalidades. Geralmente,
-                                possuem informações referentes a algum tipo de dado. Por exemplo, existem APIs que disponibilizam o
-                                clima e o tempo da sua região em tempo real.</p>
-                            <!-- /wp:paragraph -->
-                
-                            <!-- wp:heading {"level":3} -->
-                            <h3 class="wp-block-heading">Branch</h3>
-                            <!-- /wp:heading -->
-                
-                            <!-- wp:paragraph -->
-                            <p>São as ramificações de um repositório, onde armazenamos os nossos códigos.</p>
-                            <!-- /wp:paragraph -->
-                
-                            <!-- wp:heading {"level":3} -->
-                            <h3 class="wp-block-heading">Bug</h3>
-                            <!-- /wp:heading -->
-                
-                            <!-- wp:paragraph -->
-                            <p>É um erro no código que pode estar causando um comportamento indesejado.</p>
-                            <!-- /wp:paragraph -->
-                
-                            <!-- wp:heading {"level":3} -->
-                            <h3 class="wp-block-heading">Debugar</h3>
-                            <!-- /wp:heading -->
-                
-                            <!-- wp:paragraph -->
-                            <p>O ato de debugar é analisar e resolver os bugs presentes em um código.</p>
-                            <!-- /wp:paragraph -->
-                
-                            <!-- wp:heading {"level":3} -->
-                            <h3 class="wp-block-heading">Array</h3>
-                            <!-- /wp:heading -->
-                
-                            <!-- wp:paragraph -->
-                            <p>É uma estrutura de armazenamento de diferentes tipos de dados.</p>
-                            <!-- /wp:paragraph -->
-                
-                            <!-- wp:heading {"level":3} -->
-                            <h3 class="wp-block-heading">Codar</h3>
-                            <!-- /wp:heading -->
-                
-                            <!-- wp:paragraph -->
-                            <p>É o ato de escrever um software, um programa ou um simples código.</p>
-                            <!-- /wp:paragraph -->
-                
-                            <!-- wp:heading {"level":3} -->
-                            <h3 class="wp-block-heading">Diretório</h3>
-                            <!-- /wp:heading -->
-                
-                            <!-- wp:paragraph -->
-                            <p>São as pastas do nosso computador. São estruturas de organização de arquivos.</p>
-                            <!-- /wp:paragraph -->
-                
-                
-                        </article>
-                    
-                    </span>
-                    <br>
-                    <a onclick="leiaMais()" id="btnLeiaMais">Leia Mais</a> 
-
-                    <script type="text/javascript" src="script.js"></script>
-            </div>
-            </p>
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+        <p class="banner__texto">Encontre o artigo que você procura!</p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
 
-    <div>
-        <ul class="principal__lista">
-            <li class="principal__item"><a href="/html/java.html" class="principal__item-link" target="_blank">Artigo Java</a></li>
-            <li class="principal__item"><a href="/html/c.html" class="principal__item-link" target="_blank">Artigo C/C++/C#</a></li>
-            <li class="principal__item"><a href="/html/python.html" class="principal__item-link" target="_blank">Artigo Python</a></li>
-            <li class="principal__item"><a href="/html/marcacao.html" class="principal__item-link" target="_blank">Artigo Linguagem de marcação</a></li>
-            <li class="principal__item"><a href="/html/javascript.html" class="principal__item-link" target="_blank">Artigo JavaScript</a></li>
-        </ul>
-    </div>
+    <section class="principal">
+        <h2 class="principal__titulo">Como começou!!</h2>
+
+        <div class="principal__container">
+            <iframe class="container__video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/sTX0UEplF54?si=jdnk90d9iUw-u4uY"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+        </div>
+        
+        <div class="card  centralizar">
+            <p class="container__texto"><strong class="container__texto-paragrafo">O que é programação básica?</strong></p>
+            <p class="container__texto">Para que os computadores, os celulares, entre outros dispositivos e ferramentas, entendam o que
+                queremos
+                e realizem os comandos, é necessário todo um procedimento prévio. Primeiramente, programar é
+                elaborar e
+                planejar algo a ser criado. Feito isso, é preciso se comunicar de alguma forma com as máquinas,
+                definindo como elas irão se comportar e responder às necessidades humanas. Isso ocorre através das
+                linguagens de programação.</p>
+
+            <p>Basicamente, programar é planejar, elaborar e criar programas/aplicativos ou eletrônicos, visando
+                atender
+                as necessidades da sociedade.</p>
+
+            <p> O que é lógica de programação?
+                Em nossa rotina diária, ao realizarmos alguma ação, muitas vezes precisamos seguir um passo a passo.
+                Por
+                exemplo, ao acordar, arrumamos a cama, nos deslocamos até a cozinha, fazemos o café, mexemos um ovo,
+                sentamos na cadeira, tomamos o café da manhã e, por fim, lavamos a louça. Essa sequência de ações
+                ainda
+                pode ser quebrada em pedaços ainda menores, criando mais etapas que precisarão ser cumpridas. </p>
+
+            <p>Na programação funciona da mesma forma. Através do raciocínio lógico, desenvolvemos uma sequência de
+                ações que devem ser realizadas para que nossa aplicação funcione de maneira correta.</p>
+
+            <p>Conceitos usados no aprendizado de programação
+                Ao iniciarmos os estudos em programação
+    
+                <span id="pontos">...</span></p>
+
+                <span id="mais">
+                    <article class="post">
+                        <div>
+            
+                        </div>
+                        <h1 class="title title--small-size title--margin">
+                            Introdução à Programação: quais são os conceitos fundamentais? </h1>
+                        <p>Já parou para pensar que tudo à sua volta foi programado por alguém? O computador que você usa, o seu
+                            celular, o aplicativo de mensagens e, até mesmo, os comandos do seu carro. Vivemos em uma era de
+                            evolução acelerada da tecnologia, se fazendo, cada vez mais, necessário o uso das linguagens de
+                            programação em diferentes contextos.</p>
+                        <!-- /wp:paragraph -->
+            
+                        <!-- wp:paragraph -->
+                        <p>Mas, afinal, o que é a programação? Como uma máquina é capaz de entender um comando criado por um humano?
+                            Essas e outras perguntas nós responderemos a seguir nesse artigo.</p>
+                        <!-- /wp:paragraph -->
+            
+                        <!-- wp:heading -->
+                        <h2 class="wp-block-heading">O que é programação básica?</h2>
+                        <!-- /wp:heading -->
+            
+                        <!-- wp:paragraph -->
+                        <p>Para que os computadores, os celulares, entre outros dispositivos e ferramentas, entendam o que queremos
+                            e realizem os comandos, é necessário todo um procedimento prévio. Primeiramente, programar é elaborar e
+                            planejar algo a ser criado. Feito isso, é preciso se comunicar de alguma forma com as máquinas,
+                            definindo como elas irão se comportar e responder às necessidades humanas. Isso ocorre através das
+                            linguagens de programação.</p>
+                        <!-- /wp:paragraph -->
+            
+                        <!-- wp:paragraph -->
+                        <p>Basicamente, programar é planejar, elaborar e criar programas/aplicativos ou eletrônicos, visando atender
+                            as necessidades da sociedade.</p>
+                        <!-- /wp:paragraph -->
+            
+                        <!-- wp:heading -->
+                        <h2 class="wp-block-heading">O que é lógica de programação?</h2>
+                        <!-- /wp:heading -->
+            
+                        <!-- wp:paragraph -->
+                        <p>Em nossa rotina diária, ao realizarmos alguma ação, muitas vezes precisamos seguir um passo a passo. Por
+                            exemplo, ao acordar, arrumamos a cama, nos deslocamos até a cozinha, fazemos o café, mexemos um ovo,
+                            sentamos na cadeira, tomamos o café da manhã e, por fim, lavamos a louça. Essa sequência de ações ainda
+                            pode ser quebrada em pedaços ainda menores, criando mais etapas que precisarão ser cumpridas.&nbsp;</p>
+                        <!-- /wp:paragraph -->
+            
+                        <!-- wp:paragraph -->
+                        <p>Na programação funciona da mesma forma. Através do raciocínio lógico, desenvolvemos uma sequência de
+                            ações que devem ser realizadas para que nossa aplicação funcione de maneira correta.</p>
+                        <!-- /wp:paragraph -->
+            
+                        <!-- wp:heading -->
+                        <h2 class="wp-block-heading">Conceitos usados no aprendizado de programação</h2>
+                        <!-- /wp:heading -->
+            
+                        <!-- wp:paragraph -->
+                        <p>Ao iniciarmos os estudos em programação, por mais que existam diferentes linguagens, os conceitos básicos
+                            são os mesmos. É de suma importância entendê-los, visando construir uma base sólida de aprendizado na
+                            área. A seguir, veremos alguns desses principais conceitos utilizados no mundo do desenvolvimento:</p>
+                        <!-- /wp:paragraph -->
+            
+                        <!-- wp:heading {"level":3} -->
+                        <h3 class="wp-block-heading">Algoritmo</h3>
+                        <!-- /wp:heading -->
+            
+                        <!-- wp:paragraph -->
+                        <p>Vimos anteriormente que é necessário seguirmos uma sequência de passos ao desenvolver um programa. Essa
+                            sequência, que possui o objetivo de realizar uma tarefa específica, é o que chamamos de algoritmo.</p>
+                        <!-- /wp:paragraph -->
+            
+                        <!-- wp:heading {"level":3} -->
+                        <h3 class="wp-block-heading">Variáveis e constantes na programação</h3>
+                        <!-- /wp:heading -->
+            
+                        <!-- wp:paragraph -->
+                        <p>Já sabemos que precisamos desenvolver os algoritmos utilizando a lógica de programação. Porém, como
+                            lidamos com os dados e informações da nossa sequência? Para resolver esse problema, existem as variáveis
+                            e constantes. Estas são utilizadas para armazenar os valores referentes a um dado.&nbsp;</p>
+                        <!-- /wp:paragraph -->
+            
+                        <!-- wp:paragraph -->
+                        <p>Além disso, na programação, existem diferentes tipos de dados. São eles:</p>
+                        <!-- /wp:paragraph -->
+            
+                        <!-- wp:list -->
+                        <ul class="secundaria__lista"><!-- wp:list-item -->
+                            <li><strong>int</strong>: Valor numérico do tipo inteiro.</li>
+                            <!-- /wp:list-item -->
+            
+                            <!-- wp:list-item -->
+                            <li><strong>float</strong>: Valor numérico do tipo decimal.</li>
+                            <!-- /wp:list-item -->
+            
+                            <!-- wp:list-item -->
+                            <li><strong>double</strong>: Valor numérico do tipo decimal de precisão dupla.</li>
+                            <!-- /wp:list-item -->
+            
+                            <!-- wp:list-item -->
+                            <li><strong>char</strong>: É um caractere do tipo texto.</li>
+                            <!-- /wp:list-item -->
+            
+                            <!-- wp:list-item -->
+                            <li><strong>string</strong>:<strong> </strong>Conjunto de caracteres do tipo texto.&nbsp;</li>
+                            <!-- /wp:list-item -->
+            
+                            <!-- wp:list-item -->
+                            <li><strong>boolean</strong>: Representa os valores de verdadeiro ou falso.</li>
+                            <!-- /wp:list-item -->
+                        </ul>
+                        <!-- /wp:list -->
+            
+                        <!-- wp:heading {"level":3} -->
+                        <h3 class="wp-block-heading">Operadores matemáticos usados na programação</h3>
+                        <!-- /wp:heading -->
+            
+                        <!-- wp:paragraph -->
+                        <p>Esse conceito é bem básico e se assemelha muito ao que aprendemos na escola. Ao desenvolvermos um
+                            software, utilizamos operadores matemáticos o tempo todo para resolvermos diversas situações. Inclusive,
+                            as operações seguem as mesmas regras das expressões matemáticas, seguindo a lógica dos parênteses,
+                            potencialização, raiz quadrada, entre outros. São eles:&nbsp;</p>
+                        <!-- /wp:paragraph -->
+            
+                        <!-- wp:list -->
+                        <ul class="secundaria__lista"><!-- wp:list-item -->
+                            <li><strong>Adição</strong>: Representado pelo sinal de “+”.</li>
+                            <!-- /wp:list-item -->
+            
+                            <!-- wp:list-item -->
+                            <li><strong>Subtração</strong>: Representado pelo sinal de “-”.</li>
+                            <!-- /wp:list-item -->
+            
+                            <!-- wp:list-item -->
+                            <li><strong>Multiplicação</strong>: Representado pelo sinal de “*”.</li>
+                            <!-- /wp:list-item -->
+            
+                            <!-- wp:list-item -->
+                            <li><strong>Divisão</strong>: Representado pelo sinal de “/”.</li>
+                            <!-- /wp:list-item -->
+            
+                            <!-- wp:list-item -->
+                            <li><strong>Mod</strong>: Representado pelo sinal de “%”. Retorna o resto de uma divisão.</li>
+                            <!-- /wp:list-item -->
+                        </ul>
+                        <!-- /wp:list -->
+            
+                        <!-- wp:heading {"level":3} -->
+                        <h3 class="wp-block-heading">Operadores de comparação na programação</h3>
+                        <!-- /wp:heading -->
+            
+                        <!-- wp:paragraph -->
+                        <p>Utilizamos os operadores de comparação para analisarmos uma condição imposta em nosso código, retornando
+                            sempre verdadeiro ou falso. Seu uso é bem comum, principalmente, para verificar o tipo entre dados ou
+                            números. São eles:&nbsp;</p>
+                        <!-- /wp:paragraph -->
+            
+                        <!-- wp:list -->
+                        <ul class="secundaria__lista"><!-- wp:list-item -->
+                            <li><strong>Maior</strong>: Representado pelo símbolo “&gt;”.</li>
+                            <!-- /wp:list-item -->
+            
+                            <!-- wp:list-item -->
+                            <li><strong>Maior ou igual</strong>: Representado pelo símbolo “&gt;=”.</li>
+                            <!-- /wp:list-item -->
+            
+                            <!-- wp:list-item -->
+                            <li><strong>Menor</strong>: Representado pelo símbolo “&lt;”.</li>
+                            <!-- /wp:list-item -->
+            
+                            <!-- wp:list-item -->
+                            <li><strong>Menor ou igual</strong>: Representado pelo símbolo “&lt;=”.</li>
+                            <!-- /wp:list-item -->
+            
+                            <!-- wp:list-item -->
+                            <li><strong>Igual</strong>: Representado pelo símbolo “==”.&nbsp;</li>
+                            <!-- /wp:list-item -->
+            
+                            <!-- wp:list-item -->
+                            <li><strong>Diferente</strong>: Representado pelo símbolo “!=”.</li>
+                            <!-- /wp:list-item -->
+                        </ul>
+                        <!-- /wp:list -->
+            
+                        <!-- wp:heading {"level":3} -->
+                        <h3 class="wp-block-heading">Operadores lógicos</h3>
+                        <!-- /wp:heading -->
+            
+                        <!-- wp:paragraph -->
+                        <p>Existem situações mais complexas em nossos códigos que serão necessários verificar e analisar os dados,
+                            retornando um verdadeiro ou falso, através da lógica. Para isso, utilizamos os seguintes
+                            operadores:&nbsp;</p>
+                        <!-- /wp:paragraph -->
+            
+                        <!-- wp:list -->
+                        <ul class="secundaria__lista"><!-- wp:list-item -->
+                            <li><strong>&amp;&amp; (E)</strong>: Esse operador retorna verdadeiro apenas quando todas as condições
+                                são verdadeiras.</li>
+                            <!-- /wp:list-item -->
+            
+                            <!-- wp:list-item -->
+                            <li><strong>|| (OU)</strong>: Diferente do anterior, esse operador retorna verdadeiro quando pelo menos
+                                umas das condicionais é verdadeira.</li>
+                            <!-- /wp:list-item -->
+            
+                            <!-- wp:list-item -->
+                            <li><strong>! (NEGAÇÃO)</strong>: Esse operador retorna o oposto do valor analisado. Por exemplo, se um
+                                valor for verdadeiro, utilizando o operador de negação, ele se tornará falso.</li>
+                            <!-- /wp:list-item -->
+                        </ul>
+                        <!-- /wp:list -->
+            
+                        <!-- wp:heading {"level":3} -->
+                        <h3 class="wp-block-heading">Estruturas condicionais e de repetição</h3>
+                        <!-- /wp:heading -->
+            
+                        <!-- wp:paragraph -->
+                        <p>Existem diversos momentos no desenvolvimento das nossas aplicações onde sentimos a necessidade de
+                            executar o mesmo comando diversas vezes ou para diferentes elementos. Para que isso ocorra, é necessário
+                            utilizar uma estrutura de repetição. Essas estruturas funcionam de maneira diferente em cada
+                            linguagem.&nbsp;</p>
+                        <!-- /wp:paragraph -->
+            
+                        <!-- wp:paragraph -->
+                        <p>Já nas estruturas condicionais, por padrão, na maioria das linguagens, utilizamos o<strong> IF
+                                (SE)</strong> e <strong>ELSE (SENÃO)</strong> para criar as condições de validação e verificação das
+                            informações.</p>
+                        <!-- /wp:paragraph -->
+            
+                        <!-- wp:heading {"level":3} -->
+                        <h3 class="wp-block-heading">Modularização: Funções e Procedimentos</h3>
+                        <!-- /wp:heading -->
+            
+                        <!-- wp:paragraph -->
+                        <p>Quando lidamos com projetos do mercado de trabalho, é preciso definir e modular a estrutura das nossas
+                            aplicações. Dessa forma, dividimos a mesma em blocos menores, partilhando as responsabilidades,
+                            reutilizando código e facilitando a manutenção, quando necessária.&nbsp;</p>
+                        <!-- /wp:paragraph -->
+            
+                        <!-- wp:paragraph -->
+                        <p>Isso só é possível devido às funções e procedimentos. A primeira é um conjunto de comandos, com o
+                            objetivo de realizar uma tarefa determinada. Já os procedimentos são bem semelhantes, porém não possuem
+                            nenhum retorno. Podem ser utilizados para mostrar uma mensagem no console do navegador, por exemplo.</p>
+                        <!-- /wp:paragraph -->
+            
+                        <!-- wp:heading -->
+                        <h2 class="wp-block-heading">Boas práticas de programação</h2>
+                        <!-- /wp:heading -->
+            
+                        <!-- wp:paragraph -->
+                        <p>Na programação existem diversas boas práticas a serem seguidas. Isso ocorre para facilitar o trabalho em
+                            equipe e criar uma padronização nos projetos. Entre essas boas práticas, as principais são:&nbsp;</p>
+                        <!-- /wp:paragraph -->
+            
+                        <!-- wp:list -->
+                        <ul class="secundaria__lista"><!-- wp:list-item -->
+                            <li><strong>Legibilidade</strong>: Os códigos devem ser legíveis para qualquer desenvolvedor entender.
+                            </li>
+                            <!-- /wp:list-item -->
+            
+                            <!-- wp:list-item -->
+                            <li><strong>Código limpo</strong>: Devemos criar códigos objetivos e limpos. Essa prática está
+                                diretamente ligada com a questão da legibilidade.</li>
+                            <!-- /wp:list-item -->
+            
+                            <!-- wp:list-item -->
+                            <li><strong>Nomes descritivos</strong>: Os nomes das nossas variáveis, constantes e funções devem ser
+                                claros e descritivos.</li>
+                            <!-- /wp:list-item -->
+            
+                            <!-- wp:list-item -->
+                            <li><strong>Atenção ao criar comentários</strong>: Não crie comentários desnecessários nos códigos. Isso
+                                pode acabar afetando a legibilidade do mesmo.</li>
+                            <!-- /wp:list-item -->
+            
+                            <!-- wp:list-item -->
+                            <li><strong>Identação</strong>: Nossos códigos devem ser identados. Dessa forma, conseguimos identificar
+                                os blocos e escopos.</li>
+                            <!-- /wp:list-item -->
+                        </ul>
+                        <!-- /wp:list -->
+            
+                        <!-- wp:heading -->
+                        <h2 class="wp-block-heading">Termos comuns (técnicos ou não)</h2>
+                        <!-- /wp:heading -->
+            
+                        <!-- wp:paragraph -->
+                        <p>Assim como em outras áreas, no meio da programação existem diversos termos que precisamos nos habituar.
+                            Entre os principais, estão:</p>
+                        <!-- /wp:paragraph -->
+            
+                        <!-- wp:heading {"level":3} -->
+                        <h3 class="wp-block-heading">Front-end</h3>
+                        <!-- /wp:heading -->
+            
+                        <!-- wp:paragraph -->
+                        <p>Desenvolvedor que trabalha com a parte visual das aplicações, onde o usuário interage diretamente.</p>
+                        <!-- /wp:paragraph -->
+            
+                        <!-- wp:heading {"level":3} -->
+                        <h3 class="wp-block-heading">Back-end</h3>
+                        <!-- /wp:heading -->
+            
+                        <!-- wp:paragraph -->
+                        <p>Desenvolvedor que trabalha com a parte de armazenamento e segurança dos dados numa aplicação.</p>
+                        <!-- /wp:paragraph -->
+            
+                        <!-- wp:heading {"level":3} -->
+                        <h3 class="wp-block-heading">Full-Stack</h3>
+                        <!-- /wp:heading -->
+            
+                        <!-- wp:paragraph -->
+                        <p>Desenvolvedor que atua tanto na parte do Front-end, quanto no Back-end. Ou seja, lida com a área onde o
+                            usuário interage diretamente, mas também cuida da segurança e do armazenamento dos dados.</p>
+                        <!-- /wp:paragraph -->
+            
+                        <!-- wp:heading {"level":3} -->
+                        <h3 class="wp-block-heading">API</h3>
+                        <!-- /wp:heading -->
+            
+                        <!-- wp:paragraph -->
+                        <p>São serviços desenvolvidos para que os softwares acessem e utilizem as suas funcionalidades. Geralmente,
+                            possuem informações referentes a algum tipo de dado. Por exemplo, existem APIs que disponibilizam o
+                            clima e o tempo da sua região em tempo real.</p>
+                        <!-- /wp:paragraph -->
+            
+                        <!-- wp:heading {"level":3} -->
+                        <h3 class="wp-block-heading">Branch</h3>
+                        <!-- /wp:heading -->
+            
+                        <!-- wp:paragraph -->
+                        <p>São as ramificações de um repositório, onde armazenamos os nossos códigos.</p>
+                        <!-- /wp:paragraph -->
+            
+                        <!-- wp:heading {"level":3} -->
+                        <h3 class="wp-block-heading">Bug</h3>
+                        <!-- /wp:heading -->
+            
+                        <!-- wp:paragraph -->
+                        <p>É um erro no código que pode estar causando um comportamento indesejado.</p>
+                        <!-- /wp:paragraph -->
+            
+                        <!-- wp:heading {"level":3} -->
+                        <h3 class="wp-block-heading">Debugar</h3>
+                        <!-- /wp:heading -->
+            
+                        <!-- wp:paragraph -->
+                        <p>O ato de debugar é analisar e resolver os bugs presentes em um código.</p>
+                        <!-- /wp:paragraph -->
+            
+                        <!-- wp:heading {"level":3} -->
+                        <h3 class="wp-block-heading">Array</h3>
+                        <!-- /wp:heading -->
+            
+                        <!-- wp:paragraph -->
+                        <p>É uma estrutura de armazenamento de diferentes tipos de dados.</p>
+                        <!-- /wp:paragraph -->
+            
+                        <!-- wp:heading {"level":3} -->
+                        <h3 class="wp-block-heading">Codar</h3>
+                        <!-- /wp:heading -->
+            
+                        <!-- wp:paragraph -->
+                        <p>É o ato de escrever um software, um programa ou um simples código.</p>
+                        <!-- /wp:paragraph -->
+            
+                        <!-- wp:heading {"level":3} -->
+                        <h3 class="wp-block-heading">Diretório</h3>
+                        <!-- /wp:heading -->
+            
+                        <!-- wp:paragraph -->
+                        <p>São as pastas do nosso computador. São estruturas de organização de arquivos.</p>
+                        <!-- /wp:paragraph -->
+            
+            
+                    </article>
+                
+                </span>
+                <br>
+                <a onclick="leiaMais()" id="btnLeiaMais">Leia Mais</a> 
+
+                <script type="text/javascript" src="script.js"></script>
+        </div>
+        
+        <section class="topicos">
+
+            <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+            <ul class="topicos__lista">
+                <li class="topicos__item">
+                    <a href="/html/java.html" class="topicos__link">Java</a>
+                </li>
+    
+                <li class="topicos__item">
+                    <a href="/html/c.html" class="topicos__link">C/C++/C#</a>
+                </li>
+    
+                <li class="topicos__item">
+                    <a href="/html/python.html" class="topicos__link">Python</a>
+                </li>
+    
+                <li class="topicos__item">
+                    <a href="/html/marcacao.html" class="topicos__link">HTML & CSS</a>
+                </li>
+    
+                <li class="topicos__item">
+                    <a href="/html/javascript.html" class="topicos__link">JavaScript</a>
+                </li>
+    
+            </ul>
+    
+        </section>
+    
+    <section class="contato">
+        <div class="contato__descricao">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Atualizações de videos, artigos e muito mais.</p>
+        </div>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+    </section>
     
     <footer class="rodape">
         developed by codeasy company.

@@ -6,21 +6,31 @@
 @import url(/style/form.css);
 @import url(/style/control.css);
 @import url(/style/artigos.css);
+@import url(/style/banner.css);
+@import url(/style/topicos.css);
+@import url(/style/contato.css);
+@import url(/style/carrossel.css);
+@import url(/style/podcast.css);
 
 :root {
-    --azul: #76ABAE;
-    --cinza: #31363F;
-    --preto: #222831;
-    --branco: #EEEEEE;
+    --cor-de-fundo: #EBECEE;
+    --branco: #FFFFFF;
+    --laranja: #EB9B00;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --fonte-principal: "Poppins";
+    --azul: #002F52;
+    --fonte-sencundaria: "Josefin Sans";
+    --preto: #000000;
+    --cinza: #474646;
+    --cinza-claro: #858585;
+    
 }
 
 body {
-    box-sizing: border-box;
-    background-color: var(--branco);
-    color: var(--cinza);
-    font-size: 14px;
-    height: 100vh;
-    width: 100vw;
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .margin {

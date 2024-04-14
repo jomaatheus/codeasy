@@ -2,22 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5%;
+    padding: 1em;
     background-color: var(--preto);
     color: var(--azul);
     text-transform: uppercase;
 }
-
-@media screen and (min-width: 820px) {
-    .rodape {
-        padding: 2%;
-        margin-top: 20em;
-    }
- }
-
-@media screen and (min-width: 1366px) {
-    .rodape {
-        padding: 2%;
-        margin-top: 50em;
-    }
- }
