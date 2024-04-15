@@ -35,6 +35,14 @@
     margin-bottom: 0.5em;
 }
 
+.card__informacoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    margin: 1em 0;
+}
+
 .card__botoes {
     display: flex;
     justify-content: space-between;

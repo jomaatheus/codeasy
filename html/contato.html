@@ -24,7 +24,7 @@
             <ul class="lista-menu">
                 <li class="lista-menu__titulo">Categorias</li>
                 <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">HOME</a>
+                    <a href="/index.html" class="lista-menu__link">HOME</a>
                 </li>
                 <li class="lista-menu__item">
                     <a href="/html/sobre.html" class="lista-menu__link">SOBRE</a>
@@ -33,7 +33,7 @@
                     <a href="#" class="lista-menu__link">CONTATO</a>
                 </li>
                 <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">EVENTOS</a>
+                    <a href="/html/eventos.html" class="lista-menu__link">EVENTOS</a>
                 </li>
                 <li class="lista-menu__item">
                     <a href="/html/podcast.html" class="lista-menu__link">PODCAST</a>
@@ -51,7 +51,7 @@
 
             <ul class="lista-menu">
                 <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">HOME</a>
+                    <a href="/index.html" class="lista-menu__link">HOME</a>
                 </li>
                 <li class="lista-menu__item">
                     <a href="/html/sobre.html" class="lista-menu__link">SOBRE</a>
@@ -60,7 +60,7 @@
                     <a href="#" class="lista-menu__link">CONTATO</a>
                 </li>
                 <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">EVENTOS</a>
+                    <a href="/html/eventos.html" class="lista-menu__link">EVENTOS</a>
                 </li>
                 <li class="lista-menu__item">
                     <a href="/html/podcast.html" class="lista-menu__link">PODCAST</a>
@@ -89,13 +89,13 @@
 
     <section class="principal">
         <form class="principal__form" action="https://formsubmit.co/jomaatheus@gmail.com" method="POST">
-            <label for="nome">Nome:</label>
+            <label for="nome">Nome</label>
             <input class="principal__form-1" type="text" name="Nome" id="nome" placeholder="Nome"><br>
 
-            <label for="email">E-mail:</label>
+            <label for="email">E-mail</label>
             <input class="principal__form-2" type="email" name="E-mail" id="email" placeholder="E-mail" required><br>
 
-            <label for="telephone">Telefone:</label>
+            <label for="telephone">Telefone</label>
             <input class="principal__form-3" type="tel" name="Telefone" id="telephone" placeholder="Telefone" required><br>
 
             <label for="message"></label>
@@ -108,18 +108,55 @@
             <input class="placeholder__button" type="reset" value="reset">
         </div>
         </form>
-        <div class="principal margin">
-            <p class="">ENDEREÇO </p> <br>
-            <p> Unifacisa - Campus Itararé
+        <div class="card">
+            <p class="banner__titulo">ENDEREÇO </p> <br>
+            <p class="banner__texto"> Unifacisa - Campus Itararé
                 Av. Sen. Argemiro de Figueiredo, 1901 Itararé, Campina Grande - PB 58411-020
             </p>
-            <p>
+            <p class="banner__texto">
                 Unifacisa/Esac - Campus Catolé
                 R. Luíza Bezerra Mota, 200 Catolé, Campina Grande - PB 58410-340
             </p>
         </div>
 
     </section>
+
+    <section class="topicos">
+
+        <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul class="topicos__lista">
+            <li class="topicos__item">
+                <a href="/html/java.html" class="topicos__link">Java</a>
+            </li>
+
+            <li class="topicos__item">
+                <a href="/html/c.html" class="topicos__link">C/C++/C#</a>
+            </li>
+
+            <li class="topicos__item">
+                <a href="/html/python.html" class="topicos__link">Python</a>
+            </li>
+
+            <li class="topicos__item">
+                <a href="/html/marcacao.html" class="topicos__link">HTML & CSS</a>
+            </li>
+
+            <li class="topicos__item">
+                <a href="/html/javascript.html" class="topicos__link">JavaScript</a>
+            </li>
+
+        </ul>
+
+    </section>
+
+    <section class="contato">
+        <div class="contato__descricao">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Atualizações de videos, artigos e muito mais.</p>
+        </div>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+    </section>
+
     <footer class="rodape">
         developed by codeasy company.
     </footer>
